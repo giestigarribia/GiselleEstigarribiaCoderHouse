@@ -1,0 +1,19 @@
+header{
+    height: 80px;
+}
+
+main{
+    height: 350px;
+}
+
+aside{
+    height: 350px;
+}
+
+article{
+    color: yellow;
+}
+
+footer{
+    height: 200px;
+}
