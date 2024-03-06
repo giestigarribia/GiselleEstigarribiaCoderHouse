@@ -1,19 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+}
+
 header{
     height: 80px;
 }
 
 main{
     height: 350px;
+    background-image: url(Multimedia/multimoto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #00bb2d;
+    text-align: center;
+    letter-spacing: 4px;
 }
 
 aside{
     height: 350px;
-}
-
-article{
-    color: yellow;
+    background-image: url(Multimedia/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+    color: white;
 }
 
 footer{
-    height: 200px;
+    height: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+a:hover{
+    color: #00bb2d;
+  }
+
+footer div{
+    display: grid;
+}
+
+footer div a{
+    font-size: 22px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+article{
+    height: 300px;
+    background-image: url(Multimedia/gba.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    display:block;
+}
+
+nav a:hover{
+    transform: scale(0.9);
+    background-color: black;
+    transition: 1.1s;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: #00bb2d;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px white;
+}
+
+
+::-moz-scrollbar{
+    background-color: #00bb2d;
+}
+
+::-moz-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px white;
+}
+
+::-ms-scrollbar{
+    background-color: #00bb2d;
+}
+
+::-ms-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px white;
+}
+
+@media only screen and (min-width:320px) {
+    a {
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #00bb2d;
+    }
+
+    footer div a{
+        font-size: 13px;
+        display: grid;
+        place-items: center;
+    }
+
+    footer div i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px){ 
+    a {
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #00bb2d;
+    }
+
+    footer div a{
+        font-size: 13px;
+        display:inline;
+    }
+      
+    footer div i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){  
+    a{
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #00bb2d;
+      }
+
+    footer div a{
+        font-size: 22px;
+        display:inline;
+    }
 }
